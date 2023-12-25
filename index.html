@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to emoji convertor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <h1>Text <span><i class="fa-solid fa-arrow-right"></i></span>Emojis</h1>
+        <div id="endec-div">
+            <h3 id="enc-btn"><span> <i class="fa-solid fa-lock"></i></span>Encrypt Text</h3>
+            <h3 id="dec-btn"><span> <i class="fa-solid fa-lock-open"></i>Decrypt Text</span></h3>
+        </div>
+        <div id="encryption">
+            <h5>1. Type a message</h5>
+            <textarea name="" id="txtmsg" cols="30" rows="10" placeholder="Write Some Message"></textarea>
+            <h5>2. Set a password </h5>
+            <input type="password" name="" id="password" placeholder="Eg. 1234">
+            <h5>3. Encrypt message</h5>
+            <button id="encrypt-btn">
+                <i class="fa-solid fa-lock"></i>Encrypt Text
+            </button>
+
+        </div>
+        <div id="decryption" style="display: none;">
+            <h5> 1. Paste encrypted emojis</h5>
+            <textarea name="" id="emojimsg" cols="30" rows="10" placeholder=" Paste encrypted emojis here"></textarea>
+            <h5> 2. Type the password </h5>
+            <input type="password" name="" id="finalpassword" placeholder="Eg. 1234">
+            <h5> 3. Decrypt Emojis</h5>
+            <button id="decrypt-btn">
+                <i class="fa-solid fa-lock-open"></i>Decrypt Emojis
+            </button>
+
+        </div>
+        <div id="result"></div>
+    </div>
+    <!-- 
+    <i class="fa-solid fa-lock"></i>
+    <i class="fa-solid fa-lock-open"></i> -->
+    <script src="script.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
